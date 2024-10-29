@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>SWEETIE SIDE</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon-16x16.png" />
+    <link rel="manifest" href="src/assets//site.webmanifest" />
+    <style>
+      body {
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("src/assets/bgWeb.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Atur opacity gambar background */
+        z-index: -1; /* Pastikan background tidak menutupi konten */
+      }
+    </style>
+  </head>
+  <body class="bg-[#ff1ca4] p-10 min-h-screen">
+    <!-- Grid Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-2">
+      <!-- Kolom 1 Baris 1: Menu dan Pemesanan -->
+      <div>
+        <!-- Konten kosong, isi dengan Menu dan Pemesanan -->
+        <div
+          id="menu"
+          class="flex flex-col items-center justify-center p-4 bg-[#ffe3f3] border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#ffccea] mb-4"
+        >
+          <img
+            class="object-cover w-full h-96 md:h-48 md:w-48"
+            src="src/assets/pancake-mangga.jpg"
+            alt="menu dan pesanan"
+          />
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-[#ff1ca4]"
+              style="font-family: 'Pacifico', cursive"
+            >
+              Menu Kami Dan Tempat Pemesanan
+            </h5>
+            <p class="mb-3 font-normal text-gray-700">
+              keterangan menu produk dan paket dari kami serta tempat untuk anda
+              memesan
+            </p>
+            <button
+              type="button"
+              class="py-2.5 px-10 me-2 mb-2 text-md font-medium text-gray-100 focus:outline-none bg-[#ff1ca4] rounded-full hover:bg-gray-100 hover:text-[#ff1ca4] focus:z-10 focus:ring-4 focus:ring-gray-100"
+              onclick="window.location.href = 'menu.html'"
+            >
+              menu dan order
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom 2 Baris 1: Testi dan Media Sosial -->
+      <div>
+        <!-- Konten kosong, isi dengan Testi dan Media Sosial -->
+        <div
+          id="testimoni"
+          class="flex flex-col items-center justify-center p-4 bg-[#ffe3f3] border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-[#ffccea] mb-4"
+        >
+          <img
+            class="object-cover w-full h-96 md:h-48 md:w-48"
+            src="src/assets/arrangement-with-different-expressions.jpg"
+            alt="menu dan pesanan"
+          />
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5
+              class="mb-2 text-2xl font-bold tracking-tight text-[#ff1ca4]"
+              style="font-family: 'Pacifico', cursive"
+            >
+              Saluran Testimoni dan media sosial kami
+            </h5>
+            <p class="mb-3 font-normal text-gray-700">
+              link saluran testimoni dan media sosial kami yang bisa anda
+              kunjungi
+            </p>
+            <button
+              type="button"
+              id="buttonTesti"
+              class="py-2.5 px-10 me-2 mb-2 text-md font-medium text-gray-100 focus:outline-none bg-[#ff1ca4] rounded-full hover:bg-gray-100 hover:text-[#ff1ca4] focus:z-10 focus:ring-4 focus:ring-gray-100"
+            >
+              testimoni kami
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom 1 Baris 2: Event -->
+      <div>
+        <div
+          class="p-4 bg-[#ffe3f3] border border-gray-200 rounded-lg shadow md:max-w-xl hover:bg-[#ffccea] mb-4"
+        >
+          <svg
+            class="w-7 h-7 text-[#ff1ca4]"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z"
+            />
+          </svg>
+          <a href="#">
+            <h5
+              class="mb-2 text-2xl mt-2 font-semibold tracking-tight text-[#ff1ca4]"
+            >
+              Event Sweetie Side
+            </h5>
+          </a>
+          <p class="mb-3 text-lg font-normal text-gray-700">
+            Ikuti setiap acara sweetie side
+            <br />
+            Dari mulai give away hingga mengumpulkan
+            <br />
+            Voucher dari kami untuk mendapatkan
+            <br />
+            Porsi eksklusif kami yang misterius
+          </p>
+          <a
+            href="#"
+            class="inline-flex font-medium items-center text-blue-600 hover:underline"
+          >
+            Lihat Lebih Banyak
+            <svg
+              class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 18 18"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Kolom 2 Baris 2: Form Keritik dan Saran -->
+      <div class="flex justify-center items-center">
+        <!-- Konten kosong, isi dengan Form Keritik dan Saran -->
+        <form 
+        class="md:ms-[-50px] md:mt-[-40px]" style="width: 88%"
+        action="https://formsubmit.co/abidflh14@gmail.com" method="POST"
+        >
+          <div class="mb-2">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-100"
+              >Email Kamu</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-[#ff1ca4] focus:border-[#ff1ca4]block w-full p-2.5"
+              placeholder="@emailkamu.com"
+              required
+            />
+          </div>
+          <div class="mb-2">
+            <label
+              for="name"
+              class="block mb-2 text-sm font-medium text-gray-100"
+              >Nama Kamu</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="nama"
+              placeholder="nama kamu"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-[#ff1ca4] focus:border-[#ff1ca4]block w-full p-2.5"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-gray-100"
+              >Pesan Kamu</label
+            >
+            <textarea
+              id="message"
+              rows="4"
+              name="kritik"
+              class="block p-2.5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg border border-gray-300 focus:ring-[#ff1ca4] focus:border-[#ff1ca4]"
+              placeholder="Tuliskan kritik dan saran anda..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="py-2.5 px-10 me-2 mb-2 text-md font-medium text-gray-100 focus:outline-none bg-[#ff1ca4] rounded-full border border-gray-200 hover:bg-gray-100 hover:text-[#ff1ca4] focus:z-10 focus:ring-4 focus:ring-gray-100 text-center"
+            style="width: 100%"
+          >
+            Kirim kritik
+          </button>
+        </form>
+      </div>
+
+      <!-- Baris bertanda 5: Footer -->
+    </div>
+    <div class="mt-5 relative bottom-[-15px]">
+      <!-- Konten kosong, isi dengan Footer -->
+      <footer class="bg-[#ffe3f3] rounded-lg shadow">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="index.html"
+              class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img
+                src="src/assets/sweetie-side.png"
+                class="h-8 rounded-full"
+                alt="sweetie side Logo"
+              />
+              <span
+                class="self-center text-2xl font-semibold whitespace-nowrap text-[#ff1ca4]"
+                >Sweetie Side</span
+              >
+            </a>
+            <ul
+              class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
+            >
+              <li>
+                <a href="index.html" class="hover:underline me-4 md:me-6"
+                  >Halaman utama</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/sweetieside.official"
+                  target="_blank"
+                  class="hover:underline me-4 md:me-6"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.whatsapp.com/channel/0029VadcWVS11ulMrAJUXV1m?fbclid=PAZXh0bgNhZW0CMTEAAaYdMWQvEaNuzsVRzl5kj080-c1GP4NsYpGs9fCoGkm1l-IojNBeqFaTBuQ_aem_5ERjOYx-ezU0Xo6P9_CUGg"
+                  target="_blank"
+                  class="hover:underline me-4 md:me-6"
+                  >Testimoni</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/6285641764762"
+                  target="_blank"
+                  class="hover:underline"
+                  >Admin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto" />
+          <span class="block text-sm text-gray-500 sm:text-center"
+            >© 2023
+            <a href="https://flowbite.com/" class="hover:underline"
+              >Sweetie Side™</a
+            ></span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <!-- Main modal -->
+    <div
+      class="modal bg-[#ff1ca4] border border-gray-100 fixed inset-0 items-center justify-center p-4"
+      style="
+        max-width: 90%;
+        max-height: 90%;
+        width: 350px;
+        height: 200px;
+        margin: auto;
+        border-radius: 8px;
+        display: none;
+      "
+    >
+      <!-- Button Close -->
+      <div
+        class="button-close"
+        style="position: absolute; top: 10px; right: 10px; cursor: pointer"
+      >
+        <i class="bi bi-x-circle text-gray-100 text-2xl"></i>
+      </div>
+      <!-- Tombol Media Sosial dan Testimoni -->
+      <div class="buttons-container flex flex-col gap-4 w-full">
+        <button
+          class="bg-gray-100 text-[#ff1ca4] font-bold py-2 rounded-lg w-full"
+          onclick="window.open('https://www.instagram.com/sweetieside.official', '_blank')"
+        >
+          Media Sosial
+        </button>
+        <button
+          class="bg-gray-100 text-[#ff1ca4] font-bold py-2 rounded-lg w-full"
+          onclick="window.open('https://www.whatsapp.com/channel/0029VadcWVS11ulMrAJUXV1m?fbclid=PAZXh0bgNhZW0CMTEAAaYdMWQvEaNuzsVRzl5kj080-c1GP4NsYpGs9fCoGkm1l-IojNBeqFaTBuQ_aem_5ERjOYx-ezU0Xo6P9_CUGg', '_blank')"
+        >
+          Testimoni
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="wa bg-[#25D366] p-4 rounded-full fixed bottom-5 right-5 hover:cursor-pointer hover:bg-[#075E54]"
+      onclick="window.open('https://wa.me/6285641764762', '_blank')"
+    >
+      <i
+        class="bi bi-whatsapp text-white text-3xl text-center flex justify-center items-center"
+      ></i>
+    </div>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>

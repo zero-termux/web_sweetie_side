@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>SWEETIE SIDE</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicon-16x16.png" />
+    <link rel="manifest" href="src/assets//site.webmanifest" />
+    <style>
+      body {
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("src/assets/bgWeb.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Atur opacity gambar background */
+        z-index: -1; /* Pastikan background tidak menutupi konten */
+      }
+    </style>
+  </head>
+  <body class="bg-[#ff1ca4] p-10 min-h-screen"></body>
+  <div class="container">
+    <header>
+        <div class="buttonLeft text-gray-100">
+            <i id="buttonLeft" class="bi bi-arrow-left-circle text-4xl"></i>
+        </div>
+    </header>
+  </div>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttonLeft = document.querySelector('.bi-arrow-left-circle');
+
+        buttonLeft.addEventListener('mouseover', () => {
+        buttonLeft.classList.add('bi-arrow-left-circle-fill');
+        buttonLeft.classList.remove('bi-arrow-left-circle');
+        });
+
+        buttonLeft.addEventListener('mouseout', () => {
+        buttonLeft.classList.remove('bi-arrow-left-circle-fill');
+        buttonLeft.classList.add('bi-arrow-left-circle');
+        });
+
+        buttonLeft.addEventListener('click', () => {
+            window.location.href = 'home.html';
+        })
+    })
+  </script>
+</body>
+</html>
